@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "longplay-radio"
+version = "0.1.0"
+description = "A provenance-first LONGPLAY DJ continuity pipeline using Genblaze and Backblaze B2"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+license = { text = "LONGPLAY Evaluation Source License 1.0" }
+authors = [{ name = "curiousbank" }]
+dependencies = [
+  "boto3>=1.43.58,<2",
+  "genblaze-core @ git+https://github.com/backblaze-labs/genblaze.git@afa732059c961b8a2c91c5eecaa0c6c2e578f137#subdirectory=libs/core",
+  "Pillow==12.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9.0.3,<10",
+  "pytest-cov>=5,<7",
+]
+
+[project.scripts]
+longplay-radio = "longplay_radio.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/longplay_radio"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["longplay_radio"]

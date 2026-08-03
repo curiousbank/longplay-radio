@@ -1,0 +1,20 @@
+{
+  "schema_version": "longplay.dj-job.v1",
+  "job_id": "f4c31db6-8112-4dc4-bfcb-81cb7ac4c620",
+  "station_name": "LONGPLAY",
+  "show_name": "Screened Catalog",
+  "track_title": "Blue Horizon",
+  "artist_name": "The Local Satellites",
+  "script": "LONGPLAY. Between the stars, the catalog keeps moving. Up next: Blue Horizon by The Local Satellites.",
+  "target_duration_seconds": 9,
+  "approval": {
+    "approval_id": "11ae5cd8-ecc8-447e-bb40-cf33e2df9bcc",
+    "approved_by_ref": "synthetic-reviewer-01",
+    "approved_at": "2026-08-03T12:00:00Z",
+    "rights_basis": "original_continuity_copy",
+    "voice_rights_basis": "generic_synthetic_voice",
+    "contains_song_lyrics": false,
+    "contains_personal_data": false,
+    "script_sha256": "34ae10bad6abbe71c483fa9630ff226c2cb1eb6c53f17d446dd04c4f2e6beb83"
+  }
+}
