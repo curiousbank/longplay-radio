@@ -13,7 +13,7 @@ authors = [{ name = "curiousbank" }]
 dependencies = [
   "boto3>=1.43.58,<2",
   "genblaze-core @ git+https://github.com/backblaze-labs/genblaze.git@afa732059c961b8a2c91c5eecaa0c6c2e578f137#subdirectory=libs/core",
-  "Pillow==12.3.0",
+  "Pillow==13.0.0",
 ]
 
 [project.optional-dependencies]
